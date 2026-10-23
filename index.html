@@ -1,867 +1,867 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>🎙️ Banco Central de Vozes Humanizadas | gabrielmoura735/vozes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --bg-dark: #090d16;
-      --card-bg: rgba(22, 30, 49, 0.75);
-      --card-border: rgba(255, 255, 255, 0.08);
-      --card-hover: rgba(30, 41, 67, 0.9);
-      --gold: #d4af37;
-      --gold-light: #f3e5ab;
-      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa8c2c 100%);
-      --accent-blue: #3b82f6;
-      --accent-purple: #8b5cf6;
-      --accent-emerald: #10b981;
-      --accent-rose: #f43f5e;
-      --text-main: #f8fafc;
-      --text-muted: #94a3b8;
-      --radius-lg: 20px;
-      --radius-md: 12px;
-      --radius-sm: 8px;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      background-color: var(--bg-dark);
-      color: var(--text-main);
-      font-family: 'Plus Jakarta Sans', sans-serif;
-      min-height: 100vh;
-      overflow-x: hidden;
-      background-image: 
-        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
-        radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.08) 0%, transparent 45%);
-      background-attachment: fixed;
-    }
-
-    /* TOP BAR */
-    .topbar {
-      border-bottom: 1px solid var(--card-border);
-      background: rgba(9, 13, 22, 0.85);
-      backdrop-filter: blur(16px);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      padding: 14px 24px;
-    }
-    .topbar-content {
-      max-width: 1400px;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 16px;
-    }
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      text-decoration: none;
-      color: var(--text-main);
-    }
-    .brand-icon {
-      width: 40px;
-      height: 40px;
-      border-radius: 10px;
-      background: var(--gold-gradient);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #090d16;
-      font-size: 1.2rem;
-      font-weight: 800;
-      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
-    }
-    .brand-title {
-      font-weight: 700;
-      font-size: 1.15rem;
-      letter-spacing: -0.3px;
-    }
-    .brand-sub {
-      font-size: 0.75rem;
-      color: var(--gold);
-      text-transform: uppercase;
-      letter-spacing: 1px;
-    }
-    .nav-actions {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-    .btn-nav {
-      padding: 8px 16px;
-      border-radius: var(--radius-sm);
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all 0.2s ease;
-    }
-    .btn-github {
-      background: rgba(255, 255, 255, 0.08);
-      color: var(--text-main);
-      border: 1px solid var(--card-border);
-    }
-    .btn-github:hover {
-      background: rgba(255, 255, 255, 0.15);
-      border-color: rgba(255, 255, 255, 0.2);
-    }
-    .btn-product {
-      background: var(--gold-gradient);
-      color: #090d16;
-      font-weight: 700;
-    }
-    .btn-product:hover {
-      filter: brightness(1.1);
-      transform: translateY(-1px);
-    }
-
-    /* HERO SECTION */
-    .hero {
-      max-width: 1400px;
-      margin: 40px auto 20px;
-      padding: 0 24px;
-      text-align: center;
-    }
-    .hero-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 6px 14px;
-      background: rgba(212, 175, 55, 0.12);
-      border: 1px solid rgba(212, 175, 55, 0.3);
-      color: var(--gold-light);
-      border-radius: 50px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      margin-bottom: 20px;
-    }
-    .hero h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 2.8rem;
-      font-weight: 700;
-      line-height: 1.2;
-      margin-bottom: 16px;
-      background: linear-gradient(180deg, #ffffff 30%, #cbd5e1 100%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    .hero p {
-      font-size: 1.1rem;
-      color: var(--text-muted);
-      max-width: 780px;
-      margin: 0 auto 30px;
-      line-height: 1.6;
-    }
-
-    /* STATS BANNER */
-    .stats-row {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-bottom: 40px;
-    }
-    .stat-pill {
-      background: rgba(22, 30, 49, 0.5);
-      border: 1px solid var(--card-border);
-      border-radius: 12px;
-      padding: 12px 20px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      min-width: 180px;
-      text-align: left;
-    }
-    .stat-pill i {
-      font-size: 1.5rem;
-      color: var(--gold);
-    }
-    .stat-val {
-      font-size: 1.3rem;
-      font-weight: 800;
-      color: #fff;
-    }
-    .stat-lbl {
-      font-size: 0.75rem;
-      color: var(--text-muted);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    /* CONTROLS (SEARCH & FILTERS) */
-    .controls-container {
-      max-width: 1400px;
-      margin: 0 auto 32px;
-      padding: 0 24px;
-    }
-    .controls-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius-lg);
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
-    .search-box {
-      position: relative;
-      width: 100%;
-    }
-    .search-box i {
-      position: absolute;
-      left: 18px;
-      top: 50%;
-      transform: translateY(-50%);
-      color: var(--text-muted);
-      font-size: 1.1rem;
-    }
-    .search-input {
-      width: 100%;
-      padding: 14px 18px 14px 48px;
-      background: rgba(10, 15, 27, 0.8);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius-md);
-      color: #fff;
-      font-size: 0.95rem;
-      font-family: inherit;
-      outline: none;
-      transition: all 0.2s ease;
-    }
-    .search-input:focus {
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
-    }
-    .filter-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      align-items: center;
-    }
-    .filter-pill {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--card-border);
-      color: var(--text-muted);
-      padding: 8px 16px;
-      border-radius: 30px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.2s ease;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .filter-pill:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-    }
-    .filter-pill.active {
-      background: var(--gold);
-      color: #090d16;
-      border-color: var(--gold);
-      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
-    }
-
-    /* VOICES GRID */
-    .grid-container {
-      max-width: 1400px;
-      margin: 0 auto 60px;
-      padding: 0 24px;
-    }
-    .voices-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
-      gap: 24px;
-    }
-
-    /* VOICE CARD */
-    .voice-card {
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius-lg);
-      padding: 24px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-      position: relative;
-      overflow: hidden;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    }
-    .voice-card:hover {
-      transform: translateY(-4px);
-      background: var(--card-hover);
-      border-color: rgba(212, 175, 55, 0.4);
-      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
-    }
-    .voice-header {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 14px;
-    }
-    .voice-avatar {
-      width: 50px;
-      height: 50px;
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      flex-shrink: 0;
-    }
-    .voice-avatar.masculino {
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(30, 64, 175, 0.4));
-      border: 1px solid rgba(59, 130, 246, 0.3);
-      color: #60a5fa;
-    }
-    .voice-avatar.feminino {
-      background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(159, 18, 57, 0.4));
-      border: 1px solid rgba(244, 63, 94, 0.3);
-      color: #fb7185;
-    }
-    .voice-name {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: #fff;
-      line-height: 1.2;
-    }
-    .voice-origin {
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--text-muted);
-      margin-top: 3px;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .badge-origin {
-      padding: 2px 8px;
-      border-radius: 6px;
-      font-size: 0.7rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: 0.3px;
-    }
-    .badge-clube {
-      background: rgba(16, 185, 129, 0.15);
-      color: #34d399;
-      border: 1px solid rgba(16, 185, 129, 0.3);
-    }
-    .badge-eleven {
-      background: rgba(139, 92, 246, 0.15);
-      color: #a78bfa;
-      border: 1px solid rgba(139, 92, 246, 0.3);
-    }
-    .badge-devocional {
-      background: rgba(212, 175, 55, 0.15);
-      color: #f3e5ab;
-      border: 1px solid rgba(212, 175, 55, 0.3);
-    }
-
-    .voice-desc {
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      line-height: 1.5;
-      margin-bottom: 14px;
-      min-height: 38px;
-    }
-
-    .voice-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 6px;
-      margin-bottom: 16px;
-    }
-    .tag-item {
-      font-size: 0.72rem;
-      padding: 3px 8px;
-      border-radius: 6px;
-      background: rgba(255, 255, 255, 0.05);
-      color: #cbd5e1;
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-
-    /* AUDIO PLAYER IN CARD */
-    .player-wrap {
-      background: rgba(10, 15, 27, 0.9);
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius-md);
-      padding: 10px;
-      margin-bottom: 14px;
-    }
-    .player-wrap audio {
-      width: 100%;
-      height: 36px;
-      outline: none;
-    }
-
-    /* CARD ACTIONS */
-    .card-actions {
-      display: flex;
-      gap: 8px;
-      margin-top: auto;
-    }
-    .btn-action {
-      flex: 1;
-      padding: 8px 12px;
-      border-radius: var(--radius-sm);
-      font-size: 0.8rem;
-      font-weight: 600;
-      border: 1px solid var(--card-border);
-      background: rgba(255, 255, 255, 0.04);
-      color: #cbd5e1;
-      cursor: pointer;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      transition: all 0.2s ease;
-      text-decoration: none;
-    }
-    .btn-action:hover {
-      background: rgba(255, 255, 255, 0.1);
-      color: #fff;
-    }
-    .btn-action-primary {
-      background: rgba(212, 175, 55, 0.15);
-      border-color: rgba(212, 175, 55, 0.3);
-      color: var(--gold-light);
-    }
-    .btn-action-primary:hover {
-      background: var(--gold);
-      color: #090d16;
-      border-color: var(--gold);
-    }
-
-    /* MODAL */
-    .modal-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0, 0, 0, 0.75);
-      backdrop-filter: blur(8px);
-      z-index: 1000;
-      display: none;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .modal-overlay.active {
-      display: flex;
-    }
-    .modal-card {
-      background: #111726;
-      border: 1px solid var(--gold);
-      border-radius: var(--radius-lg);
-      max-width: 600px;
-      width: 100%;
-      padding: 28px;
-      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
-      position: relative;
-    }
-    .modal-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .modal-title {
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: #fff;
-    }
-    .modal-close {
-      background: none;
-      border: none;
-      color: var(--text-muted);
-      font-size: 1.2rem;
-      cursor: pointer;
-    }
-    .code-block {
-      background: #090d16;
-      border: 1px solid var(--card-border);
-      border-radius: var(--radius-md);
-      padding: 14px;
-      font-family: monospace;
-      font-size: 0.85rem;
-      color: #38bdf8;
-      overflow-x: auto;
-      margin-bottom: 16px;
-      position: relative;
-    }
-    .copy-snippet-btn {
-      position: absolute;
-      top: 8px;
-      right: 8px;
-      padding: 4px 8px;
-      background: rgba(255, 255, 255, 0.1);
-      border: 1px solid var(--card-border);
-      border-radius: 4px;
-      color: #fff;
-      font-size: 0.75rem;
-      cursor: pointer;
-    }
-
-    /* FOOTER */
-    footer {
-      border-top: 1px solid var(--card-border);
-      padding: 30px 24px;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.85rem;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 2rem; }
-      .voices-grid { grid-template-columns: 1fr; }
-      .nav-actions { display: none; }
-    }
-  </style>
-</head>
-<body>
-
-  <!-- TOP BAR -->
-  <header class="topbar">
-    <div class="topbar-content">
-      <a href="#" class="brand">
-        <div class="brand-icon"><i class="fa-solid fa-microphone-lines"></i></div>
-        <div>
-          <div class="brand-title">Banco Central de Vozes</div>
-          <div class="brand-sub">gabrielmoura735 / vozes</div>
-        </div>
-      </a>
-      <div class="nav-actions">
-        <a href="https://github.com/gabrielmoura735/vozes" target="_blank" class="btn-nav btn-github">
-          <i class="fa-brands fa-github"></i> Repositório GitHub
-        </a>
-        <a href="https://gabrielmoura735.github.io/oracao-365-dias/" target="_blank" class="btn-nav btn-product">
-          <i class="fa-solid fa-book-bible"></i> 365 Dias Oração
-        </a>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-badge">
-      <i class="fa-solid fa-shield-halved"></i> 100% Áudio Humano Real & Estúdio Neural
-    </div>
-    <h1>Catálogo de Vozes Humanas</h1>
-    <p>
-      Banco definitivo de locução profissional brasileira e vozes neurais de alta fidelidade. 
-      Eliminamos completamente sintetizadores robóticos: todas as faixas são arquivos reais de áudio <code>.mp3</code> gravados em estúdio acústico.
-    </p>
-
-    <!-- STATS -->
-    <div class="stats-row">
-      <div class="stat-pill">
-        <i class="fa-solid fa-waveform-lines"></i>
-        <div>
-          <div class="stat-val" id="totalVoices">60</div>
-          <div class="stat-lbl">Vozes Catalogadas</div>
-        </div>
-      </div>
-      <div class="stat-pill">
-        <i class="fa-solid fa-person" style="color: #60a5fa;"></i>
-        <div>
-          <div class="stat-val" id="totalMasc">32</div>
-          <div class="stat-lbl">Vozes Masculinas</div>
-        </div>
-      </div>
-      <div class="stat-pill">
-        <i class="fa-solid fa-person-dress" style="color: #fb7185;"></i>
-        <div>
-          <div class="stat-val" id="totalFem">28</div>
-          <div class="stat-lbl">Vozes Femininas</div>
-        </div>
-      </div>
-      <div class="stat-pill">
-        <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
-        <div>
-          <div class="stat-val">0%</div>
-          <div class="stat-lbl">Robótica (100% Estúdio)</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTROLS -->
-  <section class="controls-container">
-    <div class="controls-card">
-      <div class="search-box">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" id="searchInput" class="search-input" placeholder="Buscar locutor por nome, estilo (ex: Devocional, Comercial, Suave, Grave, Jovem)...">
-      </div>
-      <div class="filter-pills">
-        <button class="filter-pill active" data-filter="all"><i class="fa-solid fa-layer-group"></i> Todas as Vozes</button>
-        <button class="filter-pill" data-filter="masculino"><i class="fa-solid fa-person"></i> Masculinas</button>
-        <button class="filter-pill" data-filter="feminino"><i class="fa-solid fa-person-dress"></i> Femininas</button>
-        <button class="filter-pill" data-filter="clube"><i class="fa-solid fa-microphone"></i> Clube dos Locutores</button>
-        <button class="filter-pill" data-filter="eleven"><i class="fa-solid fa-wand-magic-sparkles"></i> ElevenLabs</button>
-        <button class="filter-pill" data-filter="devocional"><i class="fa-solid fa-hands-praying"></i> Oração & Devocional</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- VOICES GRID -->
-  <main class="grid-container">
-    <div class="voices-grid" id="voicesGrid">
-      <!-- Cards rendered dynamically -->
-    </div>
-  </main>
-
-  <!-- MODAL DE INTEGRAÇÃO -->
-  <div class="modal-overlay" id="integrationModal">
-    <div class="modal-card">
-      <div class="modal-header">
-        <h3 class="modal-title" id="modalVoiceName">Como Usar Esta Voz</h3>
-        <button class="modal-close" onclick="fecharModal()"><i class="fa-solid fa-xmark"></i></button>
-      </div>
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
-        Código HTML para colocar diretamente no seu site ou página de vendas:
-      </p>
-      <div class="code-block">
-        <button class="copy-snippet-btn" onclick="copiarSnippet('htmlSnippet')">Copiar</button>
-        <pre id="htmlSnippet"></pre>
-      </div>
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
-        Comando no terminal para importar para qualquer projeto:
-      </p>
-      <div class="code-block">
-        <button class="copy-snippet-btn" onclick="copiarSnippet('cliSnippet')">Copiar</button>
-        <pre id="cliSnippet"></pre>
-      </div>
-      <div style="display: flex; justify-content: flex-end; margin-top: 16px;">
-        <button class="btn-action btn-action-primary" onclick="fecharModal()">Fechar</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>🎙️ <strong>Banco Central de Vozes Humanizadas</strong> &bull; Repositório <a href="https://github.com/gabrielmoura735/vozes" target="_blank" style="color: var(--gold);">gabrielmoura735/vozes</a></p>
-    <p style="margin-top: 6px; font-size: 0.75rem; color: #64748b;">Amostras de áudio real para demonstração e integração profissional em produtos digitais.</p>
-  </footer>
-
-  <script src="data/banco_vozes_data.js"></script>
-  <!-- SCRIPT -->
-  <script>
-    let bancoVozes = [];
-    let currentFilter = 'all';
-    let searchQuery = '';
-
-    const grid = document.getElementById('voicesGrid');
-    const searchInput = document.getElementById('searchInput');
-    const filterButtons = document.querySelectorAll('.filter-pill');
-
-    // Carregar JSON de vozes
-    async function carregarVozes() {
-      if (window.BANCO_VOZES_EMBEDDED && Array.isArray(window.BANCO_VOZES_EMBEDDED)) {
-        bancoVozes = window.BANCO_VOZES_EMBEDDED;
-        atualizarContadores();
-        renderizarVozes();
-        return;
-      }
-      try {
-        const resp = await fetch('banco_vozes.json');
-        if (resp.ok) {
-          bancoVozes = await resp.json();
-          atualizarContadores();
-          renderizarVozes();
-        } else {
-          console.error("Falha ao carregar banco_vozes.json via fetch");
-        }
-      } catch (e) {
-        console.error("Erro fetch banco_vozes:", e);
-      }
-    }
-
-    function atualizarContadores() {
-      document.getElementById('totalVoices').innerText = bancoVozes.length;
-      document.getElementById('totalMasc').innerText = bancoVozes.filter(v => v.genero === 'masculino').length;
-      document.getElementById('totalFem').innerText = bancoVozes.filter(v => v.genero === 'feminino').length;
-    }
-
-    function renderizarVozes() {
-      grid.innerHTML = '';
-      
-      const filtradas = bancoVozes.filter(v => {
-        // Filtro de botões
-        if (currentFilter === 'masculino' && v.genero !== 'masculino') return false;
-        if (currentFilter === 'feminino' && v.genero !== 'feminino') return false;
-        if (currentFilter === 'clube' && v.origem !== 'Clube dos Locutores') return false;
-        if (currentFilter === 'eleven' && v.origem !== 'ElevenLabs') return false;
-        if (currentFilter === 'devocional' && !v.estilo.some(e => e.toLowerCase().includes('devocional') || e.toLowerCase().includes('oração') || e.toLowerCase().includes('pastoral') || e.toLowerCase().includes('serena'))) return false;
-
-        // Busca por texto
-        if (searchQuery) {
-          const q = searchQuery.toLowerCase();
-          const matchName = v.nome.toLowerCase().includes(q);
-          const matchDesc = v.descricao.toLowerCase().includes(q);
-          const matchEstilo = v.estilo.some(e => e.toLowerCase().includes(q));
-          if (!matchName && !matchDesc && !matchEstilo) return false;
-        }
-
-        return true;
-      });
-
-      if (filtradas.length === 0) {
-        grid.innerHTML = `
-          <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
-            <i class="fa-solid fa-microphone-slash" style="font-size: 2.5rem; margin-bottom: 14px; color: var(--card-border);"></i>
-            <h3>Nenhuma voz encontrada com esses filtros.</h3>
-            <p style="margin-top: 6px;">Tente buscar por outro termo ou limpar os filtros.</p>
-          </div>
-        `;
-        return;
-      }
-
-      filtradas.forEach(v => {
-        const isMasc = v.genero === 'masculino';
-        const avatarIcon = isMasc ? 'fa-user-tie' : 'fa-user';
-        const avatarClass = isMasc ? 'masculino' : 'feminino';
-
-        let badgeClass = 'badge-clube';
-        let badgeText = 'Locutor Real';
-        if (v.origem === 'ElevenLabs') {
-          badgeClass = 'badge-eleven';
-          badgeText = 'ElevenLabs';
-        } else if (v.origem.includes('Devocional') || v.origem.includes('Studio')) {
-          badgeClass = 'badge-devocional';
-          badgeText = 'Estúdio Oração';
-        }
-
-        const tagsHtml = v.estilo.slice(0, 4).map(tag => `<span class="tag-item">${tag}</span>`).join('');
-        
-        // Determinar URL de áudio
-        const audioSrc = v.arquivo_local || v.url_remota;
-        const cdnUrl = `https://gabrielmoura735.github.io/vozes/${v.arquivo_local}`;
-
-        const card = document.createElement('div');
-        card.className = 'voice-card';
-        card.innerHTML = `
-          <div>
-            <div class="voice-header">
-              <div class="voice-avatar ${avatarClass}">
-                <i class="fa-solid ${avatarIcon}"></i>
-              </div>
-              <div style="flex: 1; min-width: 0;">
-                <div class="voice-name">${v.nome}</div>
-                <div class="voice-origin">
-                  <span class="badge-origin ${badgeClass}">${badgeText}</span>
-                  <span>${isMasc ? 'Masculina' : 'Feminina'} &bull; ${v.idioma || 'pt-BR'}</span>
-                </div>
-              </div>
-            </div>
-            <div class="voice-desc">${v.descricao}</div>
-            <div class="voice-tags">${tagsHtml}</div>
-          </div>
-
-          <div>
-            <div class="player-wrap">
-              <audio controls preload="none">
-                <source src="${audioSrc}" type="audio/mpeg">
-                <source src="${v.url_remota}" type="audio/mpeg">
-                Seu navegador não suporta áudio nativo.
-              </audio>
-            </div>
-
-            <div class="card-actions">
-              <button class="btn-action" onclick="copiarLink('${cdnUrl}')">
-                <i class="fa-solid fa-copy"></i> Copiar Link
-              </button>
-              <button class="btn-action btn-action-primary" onclick="abrirModal('${v.id}')">
-                <i class="fa-solid fa-code"></i> Usar Voz
-              </button>
-            </div>
-          </div>
-        `;
-        grid.appendChild(card);
-      });
-    }
-
-    // Filtros
-    filterButtons.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterButtons.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        currentFilter = btn.getAttribute('data-filter');
-        renderizarVozes();
-      });
-    });
-
-    // Busca
-    searchInput.addEventListener('input', (e) => {
-      searchQuery = e.target.value;
-      renderizarVozes();
-    });
-
-    // Copiar Link
-    function copiarLink(url) {
-      navigator.clipboard.writeText(url).then(() => {
-        alert("Link direto do áudio copiado para a área de transferência!");
-      }).catch(() => {
-        prompt("Copie a URL abaixo:", url);
-      });
-    }
-
-    // Modal
-    function abrirModal(vozId) {
-      const voz = bancoVozes.find(v => v.id === vozId);
-      if (!voz) return;
-
-      const cdnUrl = `https://gabrielmoura735.github.io/vozes/${voz.arquivo_local}`;
-      document.getElementById('modalVoiceName').innerText = `${voz.nome} - Como Usar`;
-      
-      document.getElementById('htmlSnippet').innerText = 
-`<audio controls preload="metadata">
-  <source src="${cdnUrl}" type="audio/mpeg">
-  Seu navegador não suporta áudio.
-</audio>`;
-
-      document.getElementById('cliSnippet').innerText = 
-`python scripts/integrar_voz.py --voz ${voz.id} --destino ../SeuProjeto/audio/`;
-
-      document.getElementById('integrationModal').classList.add('active');
-    }
-
-    function fecharModal() {
-      document.getElementById('integrationModal').classList.remove('active');
-    }
-
-    function copiarSnippet(elementId) {
-      const text = document.getElementById(elementId).innerText;
-      navigator.clipboard.writeText(text).then(() => {
-        alert("Código copiado!");
-      });
-    }
-
-    // Fechar modal ao clicar fora
-    window.onclick = function(event) {
-      const modal = document.getElementById('integrationModal');
-      if (event.target === modal) {
-        fecharModal();
-      }
-    };
-
-    // Inicialização
-    carregarVozes();
-  </script>
-</body>
-</html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎙️ Banco Central de Vozes Humanizadas | gabrielmoura735/vozes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --bg-dark: #090d16;
+      --card-bg: rgba(22, 30, 49, 0.75);
+      --card-border: rgba(255, 255, 255, 0.08);
+      --card-hover: rgba(30, 41, 67, 0.9);
+      --gold: #d4af37;
+      --gold-light: #f3e5ab;
+      --gold-gradient: linear-gradient(135deg, #d4af37 0%, #f3e5ab 50%, #aa8c2c 100%);
+      --accent-blue: #3b82f6;
+      --accent-purple: #8b5cf6;
+      --accent-emerald: #10b981;
+      --accent-rose: #f43f5e;
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --radius-lg: 20px;
+      --radius-md: 12px;
+      --radius-sm: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(circle at 15% 15%, rgba(212, 175, 55, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 85% 85%, rgba(59, 130, 246, 0.08) 0%, transparent 45%);
+      background-attachment: fixed;
+    }
+
+    /* TOP BAR */
+    .topbar {
+      border-bottom: 1px solid var(--card-border);
+      background: rgba(9, 13, 22, 0.85);
+      backdrop-filter: blur(16px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 14px 24px;
+    }
+    .topbar-content {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      color: var(--text-main);
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--gold-gradient);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #090d16;
+      font-size: 1.2rem;
+      font-weight: 800;
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.3);
+    }
+    .brand-title {
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.3px;
+    }
+    .brand-sub {
+      font-size: 0.75rem;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .btn-nav {
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s ease;
+    }
+    .btn-github {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-main);
+      border: 1px solid var(--card-border);
+    }
+    .btn-github:hover {
+      background: rgba(255, 255, 255, 0.15);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+    .btn-product {
+      background: var(--gold-gradient);
+      color: #090d16;
+      font-weight: 700;
+    }
+    .btn-product:hover {
+      filter: brightness(1.1);
+      transform: translateY(-1px);
+    }
+
+    /* HERO SECTION */
+    .hero {
+      max-width: 1400px;
+      margin: 40px auto 20px;
+      padding: 0 24px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      color: var(--gold-light);
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(180deg, #ffffff 30%, #cbd5e1 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      max-width: 780px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    /* STATS BANNER */
+    .stats-row {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+    .stat-pill {
+      background: rgba(22, 30, 49, 0.5);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 12px 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 180px;
+      text-align: left;
+    }
+    .stat-pill i {
+      font-size: 1.5rem;
+      color: var(--gold);
+    }
+    .stat-val {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .stat-lbl {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    /* CONTROLS (SEARCH & FILTERS) */
+    .controls-container {
+      max-width: 1400px;
+      margin: 0 auto 32px;
+      padding: 0 24px;
+    }
+    .controls-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+    .search-box {
+      position: relative;
+      width: 100%;
+    }
+    .search-box i {
+      position: absolute;
+      left: 18px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+    .search-input {
+      width: 100%;
+      padding: 14px 18px 14px 48px;
+      background: rgba(10, 15, 27, 0.8);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      color: #fff;
+      font-size: 0.95rem;
+      font-family: inherit;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .search-input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+    }
+    .filter-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+    .filter-pill {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--card-border);
+      color: var(--text-muted);
+      padding: 8px 16px;
+      border-radius: 30px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .filter-pill:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .filter-pill.active {
+      background: var(--gold);
+      color: #090d16;
+      border-color: var(--gold);
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+    }
+
+    /* VOICES GRID */
+    .grid-container {
+      max-width: 1400px;
+      margin: 0 auto 60px;
+      padding: 0 24px;
+    }
+    .voices-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 24px;
+    }
+
+    /* VOICE CARD */
+    .voice-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .voice-card:hover {
+      transform: translateY(-4px);
+      background: var(--card-hover);
+      border-color: rgba(212, 175, 55, 0.4);
+      box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+    }
+    .voice-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+    }
+    .voice-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .voice-avatar.masculino {
+      background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(30, 64, 175, 0.4));
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      color: #60a5fa;
+    }
+    .voice-avatar.feminino {
+      background: linear-gradient(135deg, rgba(244, 63, 94, 0.2), rgba(159, 18, 57, 0.4));
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      color: #fb7185;
+    }
+    .voice-name {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+      line-height: 1.2;
+    }
+    .voice-origin {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      margin-top: 3px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .badge-origin {
+      padding: 2px 8px;
+      border-radius: 6px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+    }
+    .badge-clube {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+    .badge-eleven {
+      background: rgba(139, 92, 246, 0.15);
+      color: #a78bfa;
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+    .badge-devocional {
+      background: rgba(212, 175, 55, 0.15);
+      color: #f3e5ab;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+
+    .voice-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 14px;
+      min-height: 38px;
+    }
+
+    .voice-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 16px;
+    }
+    .tag-item {
+      font-size: 0.72rem;
+      padding: 3px 8px;
+      border-radius: 6px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    /* AUDIO PLAYER IN CARD */
+    .player-wrap {
+      background: rgba(10, 15, 27, 0.9);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 10px;
+      margin-bottom: 14px;
+    }
+    .player-wrap audio {
+      width: 100%;
+      height: 36px;
+      outline: none;
+    }
+
+    /* CARD ACTIONS */
+    .card-actions {
+      display: flex;
+      gap: 8px;
+      margin-top: auto;
+    }
+    .btn-action {
+      flex: 1;
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border: 1px solid var(--card-border);
+      background: rgba(255, 255, 255, 0.04);
+      color: #cbd5e1;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+    .btn-action:hover {
+      background: rgba(255, 255, 255, 0.1);
+      color: #fff;
+    }
+    .btn-action-primary {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: rgba(212, 175, 55, 0.3);
+      color: var(--gold-light);
+    }
+    .btn-action-primary:hover {
+      background: var(--gold);
+      color: #090d16;
+      border-color: var(--gold);
+    }
+
+    /* MODAL */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+    .modal-card {
+      background: #111726;
+      border: 1px solid var(--gold);
+      border-radius: var(--radius-lg);
+      max-width: 600px;
+      width: 100%;
+      padding: 28px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      position: relative;
+    }
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .modal-title {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    .code-block {
+      background: #090d16;
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      font-family: monospace;
+      font-size: 0.85rem;
+      color: #38bdf8;
+      overflow-x: auto;
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .copy-snippet-btn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      padding: 4px 8px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid var(--card-border);
+      border-radius: 4px;
+      color: #fff;
+      font-size: 0.75rem;
+      cursor: pointer;
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 30px 24px;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      .voices-grid { grid-template-columns: 1fr; }
+      .nav-actions { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="topbar-content">
+      <a href="#" class="brand">
+        <div class="brand-icon"><i class="fa-solid fa-microphone-lines"></i></div>
+        <div>
+          <div class="brand-title">Banco Central de Vozes</div>
+          <div class="brand-sub">gabrielmoura735 / vozes</div>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <a href="https://github.com/gabrielmoura735/vozes" target="_blank" class="btn-nav btn-github">
+          <i class="fa-brands fa-github"></i> Repositório GitHub
+        </a>
+        <a href="https://gabrielmoura735.github.io/oracao-365-dias/" target="_blank" class="btn-nav btn-product">
+          <i class="fa-solid fa-book-bible"></i> 365 Dias Oração
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-badge">
+      <i class="fa-solid fa-shield-halved"></i> 100% Áudio Humano Real & Estúdio Neural
+    </div>
+    <h1>Catálogo de Vozes Humanas</h1>
+    <p>
+      Banco definitivo de locução profissional brasileira e vozes neurais de alta fidelidade. 
+      Eliminamos completamente sintetizadores robóticos: todas as faixas são arquivos reais de áudio <code>.mp3</code> gravados em estúdio acústico.
+    </p>
+
+    <!-- STATS -->
+    <div class="stats-row">
+      <div class="stat-pill">
+        <i class="fa-solid fa-waveform-lines"></i>
+        <div>
+          <div class="stat-val" id="totalVoices">60</div>
+          <div class="stat-lbl">Vozes Catalogadas</div>
+        </div>
+      </div>
+      <div class="stat-pill">
+        <i class="fa-solid fa-person" style="color: #60a5fa;"></i>
+        <div>
+          <div class="stat-val" id="totalMasc">32</div>
+          <div class="stat-lbl">Vozes Masculinas</div>
+        </div>
+      </div>
+      <div class="stat-pill">
+        <i class="fa-solid fa-person-dress" style="color: #fb7185;"></i>
+        <div>
+          <div class="stat-val" id="totalFem">28</div>
+          <div class="stat-lbl">Vozes Femininas</div>
+        </div>
+      </div>
+      <div class="stat-pill">
+        <i class="fa-solid fa-circle-check" style="color: #34d399;"></i>
+        <div>
+          <div class="stat-val">0%</div>
+          <div class="stat-lbl">Robótica (100% Estúdio)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTROLS -->
+  <section class="controls-container">
+    <div class="controls-card">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" class="search-input" placeholder="Buscar locutor por nome, estilo (ex: Devocional, Comercial, Suave, Grave, Jovem)...">
+      </div>
+      <div class="filter-pills">
+        <button class="filter-pill active" data-filter="all"><i class="fa-solid fa-layer-group"></i> Todas as Vozes</button>
+        <button class="filter-pill" data-filter="masculino"><i class="fa-solid fa-person"></i> Masculinas</button>
+        <button class="filter-pill" data-filter="feminino"><i class="fa-solid fa-person-dress"></i> Femininas</button>
+        <button class="filter-pill" data-filter="clube"><i class="fa-solid fa-microphone"></i> Clube dos Locutores</button>
+        <button class="filter-pill" data-filter="eleven"><i class="fa-solid fa-wand-magic-sparkles"></i> ElevenLabs</button>
+        <button class="filter-pill" data-filter="devocional"><i class="fa-solid fa-hands-praying"></i> Oração & Devocional</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICES GRID -->
+  <main class="grid-container">
+    <div class="voices-grid" id="voicesGrid">
+      <!-- Cards rendered dynamically -->
+    </div>
+  </main>
+
+  <!-- MODAL DE INTEGRAÇÃO -->
+  <div class="modal-overlay" id="integrationModal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title" id="modalVoiceName">Como Usar Esta Voz</h3>
+        <button class="modal-close" onclick="fecharModal()"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
+        Código HTML para colocar diretamente no seu site ou página de vendas:
+      </p>
+      <div class="code-block">
+        <button class="copy-snippet-btn" onclick="copiarSnippet('htmlSnippet')">Copiar</button>
+        <pre id="htmlSnippet"></pre>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 12px;">
+        Comando no terminal para importar para qualquer projeto:
+      </p>
+      <div class="code-block">
+        <button class="copy-snippet-btn" onclick="copiarSnippet('cliSnippet')">Copiar</button>
+        <pre id="cliSnippet"></pre>
+      </div>
+      <div style="display: flex; justify-content: flex-end; margin-top: 16px;">
+        <button class="btn-action btn-action-primary" onclick="fecharModal()">Fechar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>🎙️ <strong>Banco Central de Vozes Humanizadas</strong> &bull; Repositório <a href="https://github.com/gabrielmoura735/vozes" target="_blank" style="color: var(--gold);">gabrielmoura735/vozes</a></p>
+    <p style="margin-top: 6px; font-size: 0.75rem; color: #64748b;">Amostras de áudio real para demonstração e integração profissional em produtos digitais.</p>
+  </footer>
+
+  <script src="data/banco_vozes_data.js"></script>
+  <!-- SCRIPT -->
+  <script>
+    let bancoVozes = [];
+    let currentFilter = 'all';
+    let searchQuery = '';
+
+    const grid = document.getElementById('voicesGrid');
+    const searchInput = document.getElementById('searchInput');
+    const filterButtons = document.querySelectorAll('.filter-pill');
+
+    // Carregar JSON de vozes
+    async function carregarVozes() {
+      if (window.BANCO_VOZES_EMBEDDED && Array.isArray(window.BANCO_VOZES_EMBEDDED)) {
+        bancoVozes = window.BANCO_VOZES_EMBEDDED;
+        atualizarContadores();
+        renderizarVozes();
+        return;
+      }
+      try {
+        const resp = await fetch('banco_vozes.json');
+        if (resp.ok) {
+          bancoVozes = await resp.json();
+          atualizarContadores();
+          renderizarVozes();
+        } else {
+          console.error("Falha ao carregar banco_vozes.json via fetch");
+        }
+      } catch (e) {
+        console.error("Erro fetch banco_vozes:", e);
+      }
+    }
+
+    function atualizarContadores() {
+      document.getElementById('totalVoices').innerText = bancoVozes.length;
+      document.getElementById('totalMasc').innerText = bancoVozes.filter(v => v.genero === 'masculino').length;
+      document.getElementById('totalFem').innerText = bancoVozes.filter(v => v.genero === 'feminino').length;
+    }
+
+    function renderizarVozes() {
+      grid.innerHTML = '';
+      
+      const filtradas = bancoVozes.filter(v => {
+        // Filtro de botões
+        if (currentFilter === 'masculino' && v.genero !== 'masculino') return false;
+        if (currentFilter === 'feminino' && v.genero !== 'feminino') return false;
+        if (currentFilter === 'clube' && v.origem !== 'Clube dos Locutores') return false;
+        if (currentFilter === 'eleven' && v.origem !== 'ElevenLabs') return false;
+        if (currentFilter === 'devocional' && !v.estilo.some(e => e.toLowerCase().includes('devocional') || e.toLowerCase().includes('oração') || e.toLowerCase().includes('pastoral') || e.toLowerCase().includes('serena'))) return false;
+
+        // Busca por texto
+        if (searchQuery) {
+          const q = searchQuery.toLowerCase();
+          const matchName = v.nome.toLowerCase().includes(q);
+          const matchDesc = v.descricao.toLowerCase().includes(q);
+          const matchEstilo = v.estilo.some(e => e.toLowerCase().includes(q));
+          if (!matchName && !matchDesc && !matchEstilo) return false;
+        }
+
+        return true;
+      });
+
+      if (filtradas.length === 0) {
+        grid.innerHTML = `
+          <div style="grid-column: 1/-1; text-align: center; padding: 60px 20px; color: var(--text-muted);">
+            <i class="fa-solid fa-microphone-slash" style="font-size: 2.5rem; margin-bottom: 14px; color: var(--card-border);"></i>
+            <h3>Nenhuma voz encontrada com esses filtros.</h3>
+            <p style="margin-top: 6px;">Tente buscar por outro termo ou limpar os filtros.</p>
+          </div>
+        `;
+        return;
+      }
+
+      filtradas.forEach(v => {
+        const isMasc = v.genero === 'masculino';
+        const avatarIcon = isMasc ? 'fa-user-tie' : 'fa-user';
+        const avatarClass = isMasc ? 'masculino' : 'feminino';
+
+        let badgeClass = 'badge-clube';
+        let badgeText = 'Locutor Real';
+        if (v.origem === 'ElevenLabs') {
+          badgeClass = 'badge-eleven';
+          badgeText = 'ElevenLabs';
+        } else if (v.origem.includes('Devocional') || v.origem.includes('Studio')) {
+          badgeClass = 'badge-devocional';
+          badgeText = 'Estúdio Oração';
+        }
+
+        const tagsHtml = v.estilo.slice(0, 4).map(tag => `<span class="tag-item">${tag}</span>`).join('');
+        
+        // Determinar URL de áudio
+        const audioSrc = v.arquivo_local || v.url_remota;
+        const cdnUrl = `https://gabrielmoura735.github.io/vozes/${v.arquivo_local}`;
+
+        const card = document.createElement('div');
+        card.className = 'voice-card';
+        card.innerHTML = `
+          <div>
+            <div class="voice-header">
+              <div class="voice-avatar ${avatarClass}">
+                <i class="fa-solid ${avatarIcon}"></i>
+              </div>
+              <div style="flex: 1; min-width: 0;">
+                <div class="voice-name">${v.nome}</div>
+                <div class="voice-origin">
+                  <span class="badge-origin ${badgeClass}">${badgeText}</span>
+                  <span>${isMasc ? 'Masculina' : 'Feminina'} &bull; ${v.idioma || 'pt-BR'}</span>
+                </div>
+              </div>
+            </div>
+            <div class="voice-desc">${v.descricao}</div>
+            <div class="voice-tags">${tagsHtml}</div>
+          </div>
+
+          <div>
+            <div class="player-wrap">
+              <audio controls preload="none">
+                <source src="${audioSrc}" type="audio/mpeg">
+                ${v.url_remota && v.url_remota !== audioSrc ? `<source src="${v.url_remota}" type="audio/mpeg">` : ''}
+                Seu navegador não suporta áudio nativo.
+              </audio>
+            </div>
+
+            <div class="card-actions">
+              <button class="btn-action" onclick="copiarLink('${cdnUrl}')">
+                <i class="fa-solid fa-copy"></i> Copiar Link
+              </button>
+              <button class="btn-action btn-action-primary" onclick="abrirModal('${v.id}')">
+                <i class="fa-solid fa-code"></i> Usar Voz
+              </button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(card);
+      });
+    }
+
+    // Filtros
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentFilter = btn.getAttribute('data-filter');
+        renderizarVozes();
+      });
+    });
+
+    // Busca
+    searchInput.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      renderizarVozes();
+    });
+
+    // Copiar Link
+    function copiarLink(url) {
+      navigator.clipboard.writeText(url).then(() => {
+        alert("Link direto do áudio copiado para a área de transferência!");
+      }).catch(() => {
+        prompt("Copie a URL abaixo:", url);
+      });
+    }
+
+    // Modal
+    function abrirModal(vozId) {
+      const voz = bancoVozes.find(v => v.id === vozId);
+      if (!voz) return;
+
+      const cdnUrl = `https://gabrielmoura735.github.io/vozes/${voz.arquivo_local}`;
+      document.getElementById('modalVoiceName').innerText = `${voz.nome} - Como Usar`;
+      
+      document.getElementById('htmlSnippet').innerText = 
+`<audio controls preload="metadata">
+  <source src="${cdnUrl}" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>`;
+
+      document.getElementById('cliSnippet').innerText = 
+`cd C:\Users\User\Desktop\Projetos\vozes && integrar.bat --voz ${voz.id} --destino ..\SeuProjeto\audio\`;
+
+      document.getElementById('integrationModal').classList.add('active');
+    }
+
+    function fecharModal() {
+      document.getElementById('integrationModal').classList.remove('active');
+    }
+
+    function copiarSnippet(elementId) {
+      const text = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(text).then(() => {
+        alert("Código copiado!");
+      });
+    }
+
+    // Fechar modal ao clicar fora
+    window.onclick = function(event) {
+      const modal = document.getElementById('integrationModal');
+      if (event.target === modal) {
+        fecharModal();
+      }
+    };
+
+    // Inicialização
+    carregarVozes();
+  </script>
+</body>
+</html>
