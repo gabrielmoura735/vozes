@@ -659,6 +659,7 @@
     <p style="margin-top: 6px; font-size: 0.75rem; color: #64748b;">Amostras de áudio real para demonstração e integração profissional em produtos digitais.</p>
   </footer>
 
+  <script src="data/banco_vozes_data.js"></script>
   <!-- SCRIPT -->
   <script>
     let bancoVozes = [];
@@ -671,6 +672,12 @@
 
     // Carregar JSON de vozes
     async function carregarVozes() {
+      if (window.BANCO_VOZES_EMBEDDED && Array.isArray(window.BANCO_VOZES_EMBEDDED)) {
+        bancoVozes = window.BANCO_VOZES_EMBEDDED;
+        atualizarContadores();
+        renderizarVozes();
+        return;
+      }
       try {
         const resp = await fetch('banco_vozes.json');
         if (resp.ok) {
