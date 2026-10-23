@@ -1,0 +1,1049 @@
+[
+  {
+    "id": "clube_rafa-silvestrini",
+    "nome": "Rafa Silvestrini",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_rafa-silvestrini.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/11/Demo-Reel-2024-1.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/rafa-silvestrini"
+  },
+  {
+    "id": "clube_adriano-sousa",
+    "nome": "Adriano Sousa",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_adriano-sousa.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/11/Adriano-Sousa-Demonstrativo.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/adriano-sousa"
+  },
+  {
+    "id": "clube_rodrigo-caceres",
+    "nome": "Rodrigo Caceres",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_rodrigo-caceres.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/DemoRodrigo-Caceres.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/rodrigo-caceres"
+  },
+  {
+    "id": "clube_fabiano-vieira",
+    "nome": "Fabiano Vieira",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_fabiano-vieira.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/05/Fabiano-Vieira_Demoreel.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/fabiano-vieira"
+  },
+  {
+    "id": "clube_dhiego-melo",
+    "nome": "Dhiego Melo",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_dhiego-melo.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Demo-Principal.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/dhiego-melo"
+  },
+  {
+    "id": "clube_yuri-ribeiro",
+    "nome": "Yuri Ribeiro",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_yuri-ribeiro.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/1_Demo-Principal-Yuri-Ribeiro-.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/yuri-ribeiro"
+  },
+  {
+    "id": "clube_anderson-roberto",
+    "nome": "Anderson Roberto",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_anderson-roberto.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/DEMO_Locucao_Anderson-Roberto-de-Lima-Anderson-Roberto-Locutor.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/anderson-roberto"
+  },
+  {
+    "id": "clube_gustavo-zouain",
+    "nome": "Gustavo Zouain",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_gustavo-zouain.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/11/Demo-Gustavo-Zouain.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/gustavo-zouain"
+  },
+  {
+    "id": "clube_nilton-teixeira",
+    "nome": "Nilton Teixeira",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Grave",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_nilton-teixeira.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Nilton_Demo_Principal.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/nilton-teixeira"
+  },
+  {
+    "id": "clube_renilson-barros",
+    "nome": "Renilson Barros",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_renilson-barros.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/Demo-Principal.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/renilson-barros"
+  },
+  {
+    "id": "clube_tiago-maioli",
+    "nome": "Tiago Maioli",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_tiago-maioli.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/09/Tiago_Maioli_Portfolio_2026.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/tiago-maioli"
+  },
+  {
+    "id": "clube_rafa-depieri",
+    "nome": "Rafa Depieri",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_rafa-depieri.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Demo-Comercial-Rafa-Depieri-layouts-Rafa-Depieri.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/rafa-depieri"
+  },
+  {
+    "id": "clube_gustavo-vargas",
+    "nome": "Gustavo Vargas",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_gustavo-vargas.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/09/Gustavo_Vargas_Demo.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/gustavo-vargas"
+  },
+  {
+    "id": "clube_aldo-perrotta",
+    "nome": "Aldo Perrotta",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_aldo-perrotta.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Demo-comercial-Aldo-Perrotta-Aldo-Perrotta.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/aldo-perrotta"
+  },
+  {
+    "id": "clube_daniel-azulai",
+    "nome": "Daniel Azulai",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_daniel-azulai.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/11/Daniela-Azulai_Demo-Principal.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/daniel-azulai"
+  },
+  {
+    "id": "clube_daniel-coutinho",
+    "nome": "Daniel Coutinho",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Grave",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_daniel-coutinho.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/11/Demo_Daniel_Coutinho.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/daniel-coutinho"
+  },
+  {
+    "id": "clube_edu-correia",
+    "nome": "Edu Correia",
+    "genero": "masculino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/masculinas/clube_masculino_edu-correia.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/05/Portfolio-Edu-Correia.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/edu-correia"
+  },
+  {
+    "id": "clube_tati-beck",
+    "nome": "Tati Beck",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_tati-beck.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/05/Tati-Beck-Demo-Comercial-Tati-Beck.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/tati-beck"
+  },
+  {
+    "id": "clube_katia-marques",
+    "nome": "Katia Marques",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Grave",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_katia-marques.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/05/Katia-Marques_Demo.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/katia-marques"
+  },
+  {
+    "id": "clube_sandra-maura",
+    "nome": "Sandra Maura",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_sandra-maura.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/05/Demo-Sandra_Maura.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/sandra-maura"
+  },
+  {
+    "id": "clube_dani-zan",
+    "nome": "Dani Zan",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_dani-zan.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/05/Dani-Zan-Portfolio-2026.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/dani-zan"
+  },
+  {
+    "id": "clube_fernanda-branco",
+    "nome": "Fernanda Branco",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Institucional",
+      "Suave",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_fernanda-branco.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/11/Demonstrativo-de-Voz-Fernanda-Branco.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/fernanda-branco"
+  },
+  {
+    "id": "clube_monica-bittencourt",
+    "nome": "Monica Bittencourt",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_monica-bittencourt.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/Demo-principal-Monica.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/monica-bittencourt"
+  },
+  {
+    "id": "clube_lu-barbosa",
+    "nome": "Lu Barbosa",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Grave",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_lu-barbosa.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/Portifolio-Lu-Barbosa.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/lu-barbosa"
+  },
+  {
+    "id": "clube_dani-tucuxi",
+    "nome": "Dani Tucuxi",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Suave",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_dani-tucuxi.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/11/Demo-Reel.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/dani-tucuxi"
+  },
+  {
+    "id": "clube_thais-dutra",
+    "nome": "Thais Dutra",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_thais-dutra.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Demo_Thais_Dutra.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/thais-dutra"
+  },
+  {
+    "id": "clube_veronica-botelho",
+    "nome": "Veronica Botelho",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_veronica-botelho.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/Demo-Comercial-Veronica-Botelho.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/veronica-botelho"
+  },
+  {
+    "id": "clube_audrei-hullen",
+    "nome": "Audrei Hullen",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_audrei-hullen.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/09/Demonstrativo-Locucao-Comercial-Audrei-Hullen-2025-online-audio-converter.com_.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/audrei-hullen"
+  },
+  {
+    "id": "clube_luciana-xavier",
+    "nome": "Luciana Xavier",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_luciana-xavier.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Portifolio_Luciana_Xavier.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/luciana-xavier"
+  },
+  {
+    "id": "clube_estela-nunes",
+    "nome": "Estela Nunes",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_estela-nunes.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2025/05/Demo-2026_Estela-Nunes.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/estela-nunes"
+  },
+  {
+    "id": "clube_elenice-souza",
+    "nome": "Elenice Souza",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Institucional",
+      "Suave",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_elenice-souza.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/11/1-Elenice-Souza-Demo.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/elenice-souza"
+  },
+  {
+    "id": "clube_andreia-lara",
+    "nome": "Andreia Lara",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional",
+      "Comercial"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_andreia-lara.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/09/Demo-Comercial-Andreia-Lara-layouts-1-Andreia-Lara.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/andreia-lara"
+  },
+  {
+    "id": "clube_pollyanna-andrade",
+    "nome": "Pollyanna Andrade",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Institucional",
+      "Humano Real",
+      "Locutor Profissional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_pollyanna-andrade.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2023/08/Demonstrativo-de-Voz-MP3-Pollyanna-Andrade.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/pollyanna-andrade"
+  },
+  {
+    "id": "clube_agatha-duarte",
+    "nome": "Agatha Duarte",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_agatha-duarte.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/Demo-Principal-Agatha-Duarte.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/agatha-duarte"
+  },
+  {
+    "id": "clube_dedeh-melo",
+    "nome": "Dedeh Melo",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_dedeh-melo.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2024/05/Dedeh-Melo-Demo.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/dedeh-melo"
+  },
+  {
+    "id": "clube_cassia-gomes",
+    "nome": "Cassia Gomes",
+    "genero": "feminino",
+    "origem": "Clube dos Locutores",
+    "estilo": [
+      "Jovem",
+      "Locutor Profissional",
+      "Humano Real",
+      "Grave",
+      "Suave",
+      "Institucional"
+    ],
+    "descricao": "Voz humana real de locutor(a) profissional do Brasil (Demo principal).",
+    "arquivo_local": "amostras/femininas/clube_feminino_cassia-gomes.mp3",
+    "url_remota": "https://clubedoslocutores.com.br/wp-content/uploads/2026/05/Demo-Principal-Cassia-Gomes.mp3",
+    "idioma": "pt-BR",
+    "perfil_link": "https://clubedoslocutores.com.br/locutores/cassia-gomes"
+  },
+  {
+    "id": "eleven_roger___laid_back__casual__resonant",
+    "nome": "Roger - Laid-Back, Casual, Resonant (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Easy going and perfect for casual conversations.",
+    "arquivo_local": "amostras/masculinas/eleven_roger___laid_back__casual__resonant.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/CwhRBWXzGAHq8TQ4Fs17/58ee3ff5-f6f2-4628-93b8-e38eb31806b0.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_sarah___mature__reassuring__confident",
+    "nome": "Sarah - Mature, Reassuring, Confident (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Young adult woman with a confident and warm, mature quality and a reassuring, professional tone.",
+    "arquivo_local": "amostras/femininas/eleven_sarah___mature__reassuring__confident.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/EXAVITQu4vr4xnSDxMaL/01a3e33c-6e99-4ee7-8543-ff2216a32186.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_laura___enthusiast__quirky_attitude",
+    "nome": "Laura - Enthusiast, Quirky Attitude (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "This young adult female voice delivers sunny enthusiasm with a quirky attitude.",
+    "arquivo_local": "amostras/femininas/eleven_laura___enthusiast__quirky_attitude.mp3",
+    "url_remota": "https://api.us.elevenlabs.io/v1/voices/FGY2WhTYpPnrIDTdsKH5/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI2NzM0MTc1OS1hZDA4LTQxYTUtYmU2ZS1kZTEyZmU0NDg2MTgubXAzIiwidGltZXN0YW1wIjoxNzkyNzg5MjAwMDAwMDAwfQ%3D%3D",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_charlie___deep__confident__energetic",
+    "nome": "Charlie - Deep, Confident, Energetic (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "Australian"
+    ],
+    "descricao": "A young Australian male with a confident and energetic voice.",
+    "arquivo_local": "amostras/masculinas/eleven_charlie___deep__confident__energetic.mp3",
+    "url_remota": "https://api.us.elevenlabs.io/v1/voices/IKne3meq5aSn9XLyUdCD/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiIxMDJkZTZmMi0yMmVkLTQzZTAtYTFmMS0xMTFmYTc1YzU0ODEubXAzIiwidGltZXN0YW1wIjoxNzkyNzg5MjAwMDAwMDAwfQ%3D%3D",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_george___warm__captivating_storyteller",
+    "nome": "George - Warm, Captivating Storyteller (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "British"
+    ],
+    "descricao": "Warm resonance that instantly captivates listeners.",
+    "arquivo_local": "amostras/masculinas/eleven_george___warm__captivating_storyteller.mp3",
+    "url_remota": "https://api.us.elevenlabs.io/v1/voices/JBFqnCBsd6RMkjVDRZzb/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiJlNjIwNmQxYS0wNzIxLTQ3ODctYWFmYi0wNmE2ZTcwNWNhYzUubXAzIiwidGltZXN0YW1wIjoxNzkyNzg5MjAwMDAwMDAwfQ%3D%3D",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_callum___husky_trickster",
+    "nome": "Callum - Husky Trickster (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Deceptively gravelly, yet unsettling edge.",
+    "arquivo_local": "amostras/masculinas/eleven_callum___husky_trickster.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/N2lVS1w4EtoT3dr4eOWO/ac833bd8-ffda-4938-9ebc-b0f99ca25481.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_river___relaxed__neutral__informative",
+    "nome": "River - Relaxed, Neutral, Informative (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "A relaxed, neutral voice ready for narrations or conversational projects.",
+    "arquivo_local": "amostras/masculinas/eleven_river___relaxed__neutral__informative.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/SAz9YHcvj6GT2YYXdXww/e6c95f0b-2227-491a-b3d7-2249240decb7.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_harry___fierce_warrior",
+    "nome": "Harry - Fierce Warrior (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "An animated warrior ready to charge forward.",
+    "arquivo_local": "amostras/masculinas/eleven_harry___fierce_warrior.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/SOYHLrjzK2X1ezoPC6cr/86d178f6-f4b6-4e0e-85be-3de19f490794.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_liam___energetic__social_media_creator",
+    "nome": "Liam - Energetic, Social Media Creator (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "A young adult with energy and warmth - suitable for reels and shorts.",
+    "arquivo_local": "amostras/masculinas/eleven_liam___energetic__social_media_creator.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/TX3LPaxmHKxFdv7VOQHJ/63148076-6363-42db-aea8-31424308b92c.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_alice___clear__engaging_educator",
+    "nome": "Alice - Clear, Engaging Educator (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "British"
+    ],
+    "descricao": "Clear and engaging, friendly woman with a British accent suitable for e-learning.",
+    "arquivo_local": "amostras/femininas/eleven_alice___clear__engaging_educator.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/Xb7hH8MSUJpSbSDYk0k2/d10f7534-11f6-41fe-a012-2de1e482d336.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_matilda___knowledgable__professional",
+    "nome": "Matilda - Knowledgable, Professional (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "A professional woman with a pleasing alto pitch. Suitable for many use cases.",
+    "arquivo_local": "amostras/femininas/eleven_matilda___knowledgable__professional.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/XrExE9yKIg1WjnnlVkGX/b930e18d-6b4d-466e-bab2-0ae97c6d8535.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_will___relaxed_optimist",
+    "nome": "Will - Relaxed Optimist (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Conversational and laid back.",
+    "arquivo_local": "amostras/masculinas/eleven_will___relaxed_optimist.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/bIHbv24MWmeRgasZH58o/8caf8f3d-ad29-4980-af41-53f20c72d7a4.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_jessica___playful__bright__warm",
+    "nome": "Jessica - Playful, Bright, Warm (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Young and popular, this playful American female voice is perfect for trendy content.",
+    "arquivo_local": "amostras/femininas/eleven_jessica___playful__bright__warm.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/cgSgspJ2msm6clMCkdW9/56a97bf8-b69b-448f-846c-c3a11683d45a.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_eric___smooth__trustworthy",
+    "nome": "Eric - Smooth, Trustworthy (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "A smooth tenor pitch from a man in his 40s - perfect for agentic use cases.",
+    "arquivo_local": "amostras/masculinas/eleven_eric___smooth__trustworthy.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/cjVigY5qzO86Huf0OWal/d098fda0-6456-4030-b3d8-63aa048c9070.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_bella___professional__bright__warm",
+    "nome": "Bella - Professional, Bright, Warm (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "This voice is warm, bright, and professional, characterized by a Standard American accent and a polished, narrative quality. It features a medium-high pitch with crisp diction and a deliberate, rhythmic pace that makes it highly intelligible and engaging for long-form listening.",
+    "arquivo_local": "amostras/femininas/eleven_bella___professional__bright__warm.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/hpp4J3VqNfWAUOO0d1Us/dab0f5ba-3aa4-48a8-9fad-f138fea1126d.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_chris___charming__down_to_earth",
+    "nome": "Chris - Charming, Down-to-Earth (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Natural and real, this down-to-earth voice is great across many use-cases.",
+    "arquivo_local": "amostras/masculinas/eleven_chris___charming__down_to_earth.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/iP95p4xoKVk53GoZ742B/3f4bde72-cc48-40dd-829f-57fbf906f4d7.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_brian___deep__resonant_and_comforting",
+    "nome": "Brian - Deep, Resonant and Comforting (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Middle-aged man with a resonant and comforting tone. Great for narrations and advertisements.",
+    "arquivo_local": "amostras/masculinas/eleven_brian___deep__resonant_and_comforting.mp3",
+    "url_remota": "https://api.us.elevenlabs.io/v1/voices/nPczCjzI2devNBz1zQrb/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiIyZGQzZTcyYy00ZmQzLTQyZjEtOTNlYS1hYmM1ZDRlNWFhMWQubXAzIiwidGltZXN0YW1wIjoxNzkyNzg5MjAwMDAwMDAwfQ%3D%3D",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_daniel___steady_broadcaster",
+    "nome": "Daniel - Steady Broadcaster (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "British"
+    ],
+    "descricao": "A strong voice perfect for delivering a professional broadcast or news story.",
+    "arquivo_local": "amostras/masculinas/eleven_daniel___steady_broadcaster.mp3",
+    "url_remota": "https://api.us.elevenlabs.io/v1/voices/onwK4e9ZLuTAKqWW03F9/previews/audio?payload=eyJ2b2ljZV9zb3VyY2UiOiJwcmVtYWRlIiwiZmlsZW5hbWUiOiI3ZWVlMDIzNi0xYTcyLTRiODYtYjMwMy01ZGNhZGMwMDdiYTkubXAzIiwidGltZXN0YW1wIjoxNzkyNzg5MjAwMDAwMDAwfQ%3D%3D",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_lily___velvety_actress",
+    "nome": "Lily - Velvety Actress (ElevenLabs)",
+    "genero": "feminino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "British"
+    ],
+    "descricao": "Velvety British female voice delivers news and narrations with warmth and clarity.",
+    "arquivo_local": "amostras/femininas/eleven_lily___velvety_actress.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/pFZP5JQG7iQjIQuC4Bku/89b68b35-b3dd-4348-a84a-a3c13a3c2b30.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_adam___dominant__firm",
+    "nome": "Adam - Dominant, Firm (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "A bright tenor pitch that immediately cuts through. The delivery is brash and openly confident, speaking with unwavering certainty and a slightly aggressive self-assurance.",
+    "arquivo_local": "amostras/masculinas/eleven_adam___dominant__firm.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/pNInz6obpgDQGcFmaJgB/d6905d7a-dd26-4187-bfff-1bd3a5ea7cac.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "eleven_bill___wise__mature__balanced",
+    "nome": "Bill - Wise, Mature, Balanced (ElevenLabs)",
+    "genero": "masculino",
+    "origem": "ElevenLabs",
+    "estilo": [
+      "Neural Studio",
+      "ElevenLabs",
+      "American"
+    ],
+    "descricao": "Friendly and comforting voice ready to narrate your stories.",
+    "arquivo_local": "amostras/masculinas/eleven_bill___wise__mature__balanced.mp3",
+    "url_remota": "https://storage.googleapis.com/eleven-public-prod/premade/voices/pqHfZKP75CvOlQylNhV4/d782b3ff-84ba-4029-848c-acf01285524d.mp3",
+    "idioma": "en-US",
+    "perfil_link": "https://elevenlabs.io/app/voice-library"
+  },
+  {
+    "id": "studio_francisca_devocional",
+    "nome": "Francisca (Clamor & Oração)",
+    "genero": "feminino",
+    "origem": "Estúdio Devocional Neural",
+    "estilo": [
+      "Devocional",
+      "Calma",
+      "Oração",
+      "Acolhedora",
+      "Humana"
+    ],
+    "descricao": "Voz feminina devocional suave com pausas acolhedoras para momentos de reflexão e oração matinal.",
+    "arquivo_local": "amostras/femininas/studio_francisca_devocional.mp3",
+    "url_remota": "",
+    "idioma": "pt-BR",
+    "perfil_link": "https://github.com/gabrielmoura735/vozes"
+  },
+  {
+    "id": "studio_antonio_narrador",
+    "nome": "Antônio (Narração Pastoral)",
+    "genero": "masculino",
+    "origem": "Estúdio Devocional Neural",
+    "estilo": [
+      "Pastoral",
+      "Narrador",
+      "Grave",
+      "Firme",
+      "Inspirador"
+    ],
+    "descricao": "Voz masculina pastoral firme, ideal para audiolivros, devocionais e mensagens edificantes de autoridade.",
+    "arquivo_local": "amostras/masculinas/studio_antonio_narrador.mp3",
+    "url_remota": "",
+    "idioma": "pt-BR",
+    "perfil_link": "https://github.com/gabrielmoura735/vozes"
+  },
+  {
+    "id": "studio_thalita_acolhedora",
+    "nome": "Thalita (Serena & Inspiradora)",
+    "genero": "feminino",
+    "origem": "Estúdio Devocional Neural",
+    "estilo": [
+      "Suave",
+      "Serena",
+      "Meditativa",
+      "Jovem"
+    ],
+    "descricao": "Voz feminina meditativa serena, perfeita para reprogramação mental, relaxamento e meditações guiadas.",
+    "arquivo_local": "amostras/femininas/studio_thalita_acolhedora.mp3",
+    "url_remota": "",
+    "idioma": "pt-BR",
+    "perfil_link": "https://github.com/gabrielmoura735/vozes"
+  }
+]
